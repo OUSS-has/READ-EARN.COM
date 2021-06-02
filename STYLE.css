@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+#page{
+	width:1000px;
+	margin:auto;}
+
+#entete{
+	height:250px;
+	background:#06C;
+}
+
+#corp {
+	animation-duration:ozdh;
+	width:252px;
+	height:215px;
+	
+	
