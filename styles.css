@@ -1,0 +1,338 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+* {
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* tete de page */
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img {
+    width: 150px;
+}
+
+section.top-page {
+    background: url('../images/tsiwa.jpg');
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+/* page de bienvenue (landing page) */
+
+.landing-page {
+    position: relative;
+    padding: 20px 50px;
+}
+
+.big-title {
+    color:#193D5E;
+    font-size:  100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    width: 60%;
+}
+
+.scroll-down {
+    color: #193D5E;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+    position: relative;
+    top: 600px;
+    margin-left: 20px;
+}
+
+/* menu de navigation */
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 600px;
+    margin-left: 1600px;
+    font-size: 35px;
+}
+
+nav.nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* services */
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 700px;
+}
+
+.delivery-icon {
+    font-size: 150px;
+    color: #ADD981;
+}
+
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+    color:#193D5E ;
+    
+    
+}
+
+/* best sells */
+
+.section-title {
+    font-size: 50px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: #ADD981;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.bests-items {
+    margin: 100px;
+    
+
+}
+
+.best-plants {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plant-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.no-grid {
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+.plant1 {
+    background-image: url(../images/nos_meilleures_ventes/1.jpeg);
+    transition: 0.3s all;
+    cursor: pointer;
+    
+}
+.plant1:hover {
+    transition: 0.3s all;
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
+    transform: scale(1.1);
+}
+
+.plant2 {
+    background-image: url(../images/nos_meilleures_ventes/2.jpeg);
+    cursor: pointer;
+    transition: 0.3s all;
+    
+}
+.plant2:hover {
+    transition: 0.3s all;
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
+    transform: scale(1.1);
+}
+
+.plant3 {
+    background-image: url(../images/nos_meilleures_ventes/3.jpeg);
+    cursor: pointer;
+    transition: 0.3s all;    
+}
+.plant3:hover {
+    transition: 0.3s all;
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
+    transform: scale(1.1);
+}
+
+.plant4 {
+    background-image: url(../images/nos_meilleures_ventes/4.jpeg);
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.plant4:hover {
+    transition: 0.3s all;
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
+    transform: scale(1.1);
+}
+
+.plant-details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+}
+
+.plant-name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.plant-price {
+    color: #193D5E;
+    line-height: 3px;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.FIN{
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 3px;
+    margin-bottom: 100px;
+
+}
+.FIN-price{
+    color: #193D5E;
+    line-height: 3px;
+    font-size: 35px;
+    font-weight: 800;
+
+}
+/* nos plantes */
+
+.all-plants {
+    margin: 100px;
+}
+
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,600px);
+}
+
+.plant-grid1 {
+    background-image: url(../images/nos_plantes/1.jpeg);
+    cursor: pointer;
+    transition: 0.3s all;    
+      
+}
+.plant-grid1:hover {
+    transition: 0.3s all;
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
+    transform: scale(0.8);
+
+}
+
+.plant-grid2 {
+    background-image: url(../images/nos_plantes/2.jpeg);
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.plant-grid2:hover {
+    transition: 0.3s all;
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
+    transform: scale(0.8);
+}
+
+.plant-grid3 {
+    background-image: url(../images/nos_plantes/3.jpeg);
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.plant-grid3:hover {
+    transition: 0.3s all;
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
+    transform: scale(0.8);
+}
+
+.plant-grid4 {
+   background-image: url(../images/nos_plantes/4.jpeg); 
+   cursor: pointer;
+   transition: 0.3s all;   
+}
+.plant-grid4:hover{
+    transition: 0.3s all;
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
+    transform: scale(0.8);
+}
+
+.plant-grid5 {
+    background-image: url(../images/nos_plantes/5.jpeg);
+    cursor: pointer;
+    transition: 0.3s all;   
+}
+.plant-grid5:hover{
+    transition: 0.3s all;
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
+    transform: scale(0.8);
+}
+.plant-grid6 {
+    background-image: url(../images/nos_plantes/6.jpeg);
+    cursor: pointer;
+    transition: 0.3s all;      
+}
+.plant-grid6:hover{
+    transition: 0.3s all;
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
+    transform: scale(0.8);
+}
+
+.plant-grid7 {
+    background-image: url(../images/nos_plantes/7.jpeg);
+    cursor: pointer;
+    transition: 0.3s all; }
+
+.plant-grid7:hover{
+    transition: 0.3s all;
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
+    transform: scale(0.8);
+}    
+
+.plant-grid8{
+    background-image: url(../images/nos_plantes/8.jpeg);
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.plant-grid8:hover{
+    transition: 0.3s all;
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
+    transform: scale(0.8);
+}    
+.plant-grid9{
+    background-image: url(../images/nos_plantes/9.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+    margin-top:150px;
+}
+
+/* pied de page */
+
